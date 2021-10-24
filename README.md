@@ -1,5 +1,11 @@
 # Flow.Launcher.Plugin.NumberConverter
 
-ported https://github.com/houxg/Wox-bodh
+Ported from https://github.com/houxg/Wox-bodh
 
-default keyword is `nc`
+## Installation
+
+Just place the contents of the Release zip in your %appdata%/FlowLauncher/Plugins folder and restart FlowLauncher.
+
+## Keyword
+
+`nc`

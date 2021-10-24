@@ -2,11 +2,11 @@
     "ID": "d6675ca0-9da6-4361-8342-95564214cd04",
     "ActionKeyword": "nc",
     "Name": "Number Converter",
-    "Description": "Convert numbers to dec, oct or hex",
+    "Description": "Convert numbers between dec/oct/hex/bin",
     "Author": "liberize",
     "Version": "1.0",
     "Language": "python",
-    "Website": "https://github.com/Flow-Launcher/plugin-samples",
+    "Website": "https://github.com/liberize/Flow.Launcher.Plugin.NumberConverter",
     "IcoPath": "Images\\app.png",
     "ExecuteFileName": "main.py"
 }
