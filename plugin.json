@@ -4,7 +4,7 @@
     "Name": "Number Converter",
     "Description": "Convert numbers between dec/oct/hex/bin",
     "Author": "liberize",
-    "Version": "1.0.1",
+    "Version": "1.0.2",
     "Language": "python",
     "Website": "https://github.com/liberize/Flow.Launcher.Plugin.NumberConverter",
     "IcoPath": "Images\\app.png",
