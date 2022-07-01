@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 import sys,os
-import re
 
 parent_folder_path = os.path.abspath(os.path.dirname(__file__))
 sys.path.append(parent_folder_path)
@@ -28,18 +27,13 @@ def toBin(dec, padding):
 
 def getDec(arg):
     if arg.startswith("0x") or arg.startswith("0X"):
-        return (int(arg, 0), "Hex")
-    elif isBin(arg):
+        return (int(arg, 16), "Hex")
+    elif arg.startswith("0b") or arg.startswith("0B"):
         return (int(arg, 2), "Bin")
     elif arg.startswith("0"):
         return (int(arg, 8), "Oct")
     else:
         return (int(arg, 10), "Dec")
-
-
-def isBin(arg):
-    result = re.match("[10]+", arg)
-    return result is not None and len(result.group()) == len(arg)
 
 
 class NumberConverter(FlowLauncher):
@@ -76,7 +70,7 @@ class NumberConverter(FlowLauncher):
         return results
 
     def copyToClipboard(self, value):
-        command = 'echo ' + value.strip() + '| clip'
+        command = 'echo|set /p={v}|clip'.format(v=value.strip())
         os.system(command)
 
 
